@@ -1,11 +1,18 @@
 import React from 'react'
-import { Typography,AppBar,Toolbar,ImageListItem , ImageList,Container} from '@mui/material'
+import { Typography,AppBar,Toolbar,ImageListItem , ImageList,Container,TextField,Button} from '@mui/material'
 import ImagesData from './ImagesData.json'
-import { TextField } from '@mui/material'
-import { Button } from '@mui/material'
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+  text : {
+    "marginTop":"70px",
+    "textAlign":"center"
+  }
+})
 
 const App = () => {
+  const classes = useStyles();
   return (
     <div>
       <AppBar>
@@ -15,7 +22,7 @@ const App = () => {
         </Toolbar>
       </AppBar>
 
-      <Container style={{"marginTop":"70px","textAlign":"center"}}>
+      <Container className={classes.text}>
         <Typography variant="h2">Our Latest Version of Photography</Typography>
         <Typography paragraph>We are always here for you,please fill the form below for invite request</Typography>
       </Container>

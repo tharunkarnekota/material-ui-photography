@@ -3,15 +3,13 @@ import { Typography,AppBar,Toolbar,ImageListItem , ImageList,Container} from '@m
 import ImagesData from './ImagesData.json'
 import { TextField } from '@mui/material'
 import { Button } from '@mui/material'
-import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 const App = () => {
   return (
     <div>
       <AppBar>
         <Toolbar>
-          <CameraAltIcon />
-          <Typography variant="h5"> Photography</Typography>
+          <Typography variant="h5">Photography</Typography>
         </Toolbar>
       </AppBar>
 
